@@ -10,10 +10,13 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
+      <!--
+        <ion-icon [name]="item.icon" item-start></ion-icon>
+      -->
       {{item.moment}}:
       {{item.title}}
-      ({{item.note}})
+      - {{item.tom}}
+      (por {{item.arranjo}})
       <div class="item-note" item-end>
         <a href='{{item.url}}' target='_blank'>{{item.url}}</a>
       </div>
