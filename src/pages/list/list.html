@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Lista de músicas</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,9 +11,11 @@
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.moment}}:
       {{item.title}}
+      ({{item.note}})
       <div class="item-note" item-end>
-        {{item.note}}
+        <a href='{{item.url}}' target='_blank'>{{item.url}}</a>
       </div>
     </button>
   </ion-list>
