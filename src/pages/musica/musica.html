@@ -11,7 +11,6 @@
           <ion-icon name="menu"></ion-icon>
         </button>    
     <ion-title>{{musica.title}} - {{musica.tom}}</ion-title>
-    <div class='subtitle'>por {{musica.arranjo}}</div>
     <ion-buttons end>
         <button ion-button icon-only>
           <ion-icon name="search"></ion-icon>
@@ -23,6 +22,9 @@
 
 
 <ion-content padding>
+  <h2>{{musica.title}} - {{musica.tom}}</h2>
+  <h5>Arranjo por {{musica.arranjo}}</h5>
+
   <!--
   <iframe width='100%' src="{{musica.url}} | safeUrl" frameborder="0"></iframe>
   -->
