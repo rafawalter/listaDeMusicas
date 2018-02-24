@@ -1,0 +1,8 @@
+{
+  "name": "listaDeMusicas",
+  "app_id": "a1d4a125",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
