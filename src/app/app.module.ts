@@ -5,15 +5,19 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { MusicaPage } from '../pages/musica/musica';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SafeUrlPipe } from '../pipes/safe-url/safe-url';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MusicaPage,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MusicaPage
   ],
   providers: [
     StatusBar,

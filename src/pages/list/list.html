@@ -10,19 +10,18 @@
 <ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <!--
-        <ion-icon [name]="item.icon" item-start></ion-icon>
-      -->
-      {{item.moment}}:
-      {{item.title}}
-      - {{item.tom}}
-      (por {{item.arranjo}})
-      <div class="item-note" item-end>
+      <div>
+        {{item.moment}}: {{item.title}} - {{item.tom}} 
+        <br>
+        {{item.arranjo}}
+      </div>
+      <div>
         <a href='{{item.url}}' target='_blank'>{{item.url}}</a>
       </div>
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
+    You navigated here from
+    <b>{{selectedItem.title}}</b>
   </div>
 </ion-content>
