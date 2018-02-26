@@ -27,10 +27,10 @@ export class ListPage {
     )
   }
 
-  itemTapped(event, item) {
+  itemTapped(event, musica) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(MusicaPage, {
-      item: item
+      musica: musica
     });
   }
 }

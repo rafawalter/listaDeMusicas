@@ -18,7 +18,7 @@ export class MusicaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-    this.musica = navParams.data.item;
+    this.musica = navParams.data.musica;
   }
 
   ionViewDidLoad() {
