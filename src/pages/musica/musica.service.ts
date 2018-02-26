@@ -9,6 +9,7 @@ export class MusicaService {
 
     http: Http;
     headers: Headers;
+    url: string = 'assets/data/musicas.json'; 
 
     constructor(http: Http) {
         this.http = http;
@@ -18,6 +19,6 @@ export class MusicaService {
 
     list(): Observable<Musica[]> {
         
-        return this.http.get('musicas.json').map(res => res.json());
+        return this.http.get(this.url).map(res => res.json());
     }
 }

@@ -14,14 +14,14 @@
 
 <ion-content>
   <ion-item>
-      <a href='https://liturgia.cancaonova.com/' target="_blank">Liturgia dária</a>
+      <a href='https://liturgia.cancaonova.com/' target="_blank">Liturgia diária</a>
   </ion-item>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+    <button ion-item *ngFor="let musica of musicas" (click)="itemTapped($event, musica)">
       <div>
-        <h2>{{item.title}} - {{item.tom}} </h2>   
-        <h3>{{item.moment}}</h3>     
-        <p>por {{item.arranjo}}</p>
+        <h2>{{musica.title}} - {{musica.tom}} </h2>   
+        <h3>{{musica.moment}}</h3>     
+        <p>por {{musica.arranjo}}</p>
       </div>
     </button>
   </ion-list>

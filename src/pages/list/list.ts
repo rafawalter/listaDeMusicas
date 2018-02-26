@@ -43,6 +43,7 @@ export class ListPage {
     musicaService.list()
       .subscribe( 
       musicas => {
+        console.log(this.musicas);
         this.musicas = musicas
       },
       erro => console.log(erro)
