@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'musica.html',
 })
 export class MusicaPage {
-  musica: { moment: string; title: string; tom: string; arranjo: string; url: string; cifras: string};
+  musica: { moment: string; title: string; tom: string; arranjo: string; url: string; cifras: string };
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -23,6 +23,10 @@ export class MusicaPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MusicaPage');
+  }
+
+  proximaMusica() {
+    console.log('proximaMusica musica');
   }
 
 }
