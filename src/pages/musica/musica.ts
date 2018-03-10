@@ -25,8 +25,12 @@ export class MusicaPage {
     console.log('ionViewDidLoad MusicaPage');
   }
 
-  proximaMusica() {
-    console.log('proximaMusica musica');
+  proxima() {
+    console.log('proxima');
+  }
+
+  anterior() {
+    console.log('anterior');
   }
 
 }
