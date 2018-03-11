@@ -3,7 +3,6 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { MusicaPage } from '../pages/musica/musica';
 import { MusicaService } from '../pages/musica/musica.service';
@@ -16,7 +15,6 @@ import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
     ListPage,
     MusicaPage,
     SafeUrlPipe
@@ -29,7 +27,6 @@ import { HttpModule } from '@angular/http';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     ListPage,
     MusicaPage
   ],
@@ -37,7 +34,7 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     MusicaService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

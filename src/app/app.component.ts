@@ -3,7 +3,6 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { MusicaPage } from "../pages/musica/musica";
 
@@ -24,7 +23,6 @@ export class MyApp {
     this.pages = [
       { title: 'Lista', component: ListPage },
       { title: 'Musica', component: MusicaPage },
-      { title: 'Home', component: HomePage }
     ];
 
   }
