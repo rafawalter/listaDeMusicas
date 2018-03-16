@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Musica } from "./musica.model";
 
 /**
  * Generated class for the MusicaPage page.
@@ -14,7 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'musica.html',
 })
 export class MusicaPage {
-  musica: { moment: string; title: string; tom: string; arranjo: string; url: string; cifras: string };
+
+  musica: Musica;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
